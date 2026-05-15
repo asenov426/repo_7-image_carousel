@@ -4,20 +4,21 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css" />
+   <script src="script.js" defer></script>
    <title>Image Carousel</title>
 </head>
 <body>
    <div class="carousel">
-      <div class="images">
+      <div class="imgsContainer" id="imgsContainer">
          <img src="images/first-image.avif" alt="first-image"/>
          <img src="images/second-image.avif" alt="second-image"/>
          <img src="images/third-image.avif" alt="third-image"/>
          <img src="images/fourth-image.avif" alt="fourth-image"/>
       </div>
 
-      <div class="buttons">
-        <button class="btn">Prev</button>
-        <button class="btn">Next</button>
+      <div class="btnsContainer">
+        <button class="btn" id="left" disabled>Prev</button>
+        <button class="btn" id="right">Next</button>
       </div>
    </div>
 </body>
